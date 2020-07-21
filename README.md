@@ -13,21 +13,21 @@ After cloning this repo, you should create a python3 venv (named *venv* at the r
 
   - *requirements* contains modules needed by our main.py and custom model **except** tensorflow ;
 
-  - *requirements-ml* contains our custom library (not available on PyPI) that will be needed by GCP AI platform (will be uploaded to Google Storage when needed) ; 
+  - *requirements-ml* contains our custom library (not available on PyPI) that will be needed by GCP AI platform (will be uploaded to Google Storage when needed) ;
 
   - *requirement-extra* contains the same tensorflow version that will be used on AI platform (depending on the runtile environment and installed by default).
 
 There is a **MyModel** class containing *preprocess*, *train* and *predict* methods skeletons.
 
-*template.yaml.template* is the configuration file template containing (mainly) credentials.
+```template.yaml.template``` is the configuration file template containing (mainly) credentials.
 
-*queries.yaml* contains templated queries to be used to access or get data from any database (BigQuery in this case).
+```queries.yaml``` contains templated queries to be used to access or get data from any database (BigQuery in this case).
 
 **mymodel** is our custom library .
 
 ### PACKAGING DAG AIRFLOW AND CODE
 
-buld folder contains code to build debian packages for DAG and CODE and files for jenkins pipelines
+```build``` folder contains code to make debian packages for DAG and CODE alongside files for jenkins pipelines.
 
 **DAG**: make-dag-package.sh
 
