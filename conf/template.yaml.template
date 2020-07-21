@@ -1,0 +1,6 @@
+path: /path/to/template
+
+google_cloud:
+  credentials_json_file: ''
+  project: ''
+  bucket_id: ''

@@ -1,0 +1,6 @@
+query1: "
+  SELECT *
+  FROM (SELECT *, ROW_NUMBER() OVER(PARTITION BY person_id ORDER BY timestamp DESC) AS rn
+        FROM `{project_account}.dataset.table_*`)
+  WHERE rn<50
+  "
