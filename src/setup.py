@@ -11,4 +11,5 @@ setup(
     version=version,
     install_requires=REQUIREMENTS,
     packages=find_packages(),
-)
+    package_data = {"mymodel": ["queries/*.yaml"]},
+    include_package_data=True)

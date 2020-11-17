@@ -36,7 +36,7 @@ docker run -t --name $CONTAINER \
     && ${PACKAGE_PATH}/venv/bin/pip3 install --no-deps --index-url https://******/repository/pypi-all/simple \
                                         -r /src/requirements-ml.txt\
     && ${PACKAGE_PATH}/venv/bin/pip3 install --index-url https://******/repository/pypi-all/simple \
-                                        -r /src/requirements-extra.txt\
+                                        -r /src/requirements-local.txt\
     && rm -f ${PACKAGE_ML}/*\
     && ${PACKAGE_PATH}/venv/bin/pip3 download --no-deps --index-url https://******/repository/pypi-all/simple \
                                         -d ${PACKAGE_ML} -r /src/requirements-ml.txt \

@@ -1,0 +1,6 @@
+DECLARE
+  myVar TIMESTAMP;
+SET
+  myVar = (SELECT MAX(timestamp) FROM dataset.table1);
+SELECT field1 FROM dataset.table2 where _PARTITION_TIME = myVar
+
