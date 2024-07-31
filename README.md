@@ -15,7 +15,7 @@ After cloning this repo, you should create a python3 venv (named *venv* at the r
 
   - *requirements-ml* contains our custom library (not available on PyPI) that will be needed by GCP AI platform (will be uploaded to Google Storage when needed) ;
 
-  - *requirement-extra* contains the same tensorflow version that will be used on AI platform (depending on the runtile environment and installed by default).
+  - *requirement-extra* contains the same tensorflow version that will be used on AI platform (depending on the runtime environment and installed by default).
 
 There is a **MyModel** class containing *preprocess*, *train* and *predict* methods skeletons.
 
